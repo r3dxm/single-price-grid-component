@@ -1,0 +1,165 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+@font-face {
+  font-family: "karla";
+  src: url("../fonts/Karla.ttf");
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 220px 290px;
+  grid-template-areas:
+    "main main"
+    "price reason ";
+  border-radius: 10px;
+  overflow: hidden;
+  font-family: "karla";
+  box-shadow:
+      0px 1.6px 2.7px rgba(0, 0, 0, 0.025),
+      0px 4.1px 6.9px rgba(0, 0, 0, 0.035),
+      0px 8.3px 14.2px rgba(0, 0, 0, 0.045),
+      0px 17.2px 29.2px rgba(0, 0, 0, 0.055),
+      0px 47px 80px rgba(0, 0, 0, 0.08);
+}
+
+.main {
+  grid-area: main;
+  background-color: white;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
+.main h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--cyan);
+}
+
+.main h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--bright-yellow);
+}
+
+.main p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 80%;
+  color: var(--grayish-blue);
+}
+
+.price {
+  grid-area: price;
+  background-color: var(--cyan);
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 30px;
+}
+
+.price h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.price h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+}
+
+.price span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--light-gray);
+}
+
+.price p {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: -20px;
+}
+
+.price button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: var(--bright-yellow);
+  margin-top: 20px;
+  box-shadow:
+      0.2px 0.8px 2.7px rgba(0, 0, 0, 0.05),
+      0.5px 1.9px 6.9px rgba(0, 0, 0, 0.071),
+      1.1px 3.9px 14.2px rgba(0, 0, 0, 0.089),
+      2.2px 8px 29.2px rgba(0, 0, 0, 0.11),
+      6px 22px 80px rgba(0, 0, 0, 0.16);
+}
+
+.price button:hover {
+  cursor: pointer;
+}
+
+.reason {
+  grid-area: reason;
+  background-color: var(--cyan);
+  opacity: 0.75;
+  padding-left: 50px;
+  padding-top: 28px;
+}
+
+.reason h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.reason p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 50%;
+  color: var(--light-gray);
+}
+
+@media only screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 350px;
+    grid-template-rows: 260px 260px 260px;
+    grid-template-areas: 
+      "main"
+      "price"
+      "reason";
+  }
+  .main {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .main h1 {
+    font-size: 20px;
+  }
+  .main h2 {
+    font-size: 18px;
+    margin-top: 25px;
+  }
+  .main p {
+    margin: 0;
+    line-height: 150%;
+  }
+  .price {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+  .reason {
+    padding-left: 30px;
+    padding-top: 15px;
+  }
+}
