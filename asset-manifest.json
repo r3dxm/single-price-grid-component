@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/single-price-grid-component/static/css/main.fc1faa09.css",
+    "main.js": "/single-price-grid-component/static/js/main.36e0a686.js",
+    "static/js/787.a333eff8.chunk.js": "/single-price-grid-component/static/js/787.a333eff8.chunk.js",
+    "static/media/Karla.ttf": "/single-price-grid-component/static/media/Karla.873b3ab26751da74a1bc.ttf",
+    "index.html": "/single-price-grid-component/index.html",
+    "main.fc1faa09.css.map": "/single-price-grid-component/static/css/main.fc1faa09.css.map",
+    "main.36e0a686.js.map": "/single-price-grid-component/static/js/main.36e0a686.js.map",
+    "787.a333eff8.chunk.js.map": "/single-price-grid-component/static/js/787.a333eff8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc1faa09.css",
+    "static/js/main.36e0a686.js"
+  ]
+}
